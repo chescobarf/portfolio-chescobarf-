@@ -1,3 +1,4 @@
+require('./config/config')
 const { response } = require('express')
 const express = require('express')
 const app = express()
@@ -48,6 +49,6 @@ app.get('/api-portfolio/', function (req, res) {
 
 
 
-app.listen(3000), ()=>{
-    console.log("Listening of port 3000")
+app.listen(process.env.PORT), ()=>{
+    console.log("Listening of port ",process.env.PORT)
 }
