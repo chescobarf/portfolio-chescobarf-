@@ -13,15 +13,31 @@ app.get('/', function (req, res) {
 
 app.get('/api-portfolio/', function (req, res) {
     let response = {
-        id:0,
+        name:"Christian Escobar",
         intro:'Hola! soy Ingeniero Informatico titulado en Duoc UC, dentro de mis habilidades esta ser una persona proactiva, analitica, y lider en equipos de trabajo. Actualmente estoy en busca de desafíos, en donde pueda desarrollarme de manera más profesional y siempre con las ganas de aprender.',
         correo:"ch.escobarf@outlook.com",
-        socials: {
-            linkedin:{link: "https://www.linkedin.com/in/ch-escobarf/",img:` <i class="fab fa-linkedin-in"></i> `},
-            gitlab:{link:"https://gitlab.com/ch.escobarf",img:` <i class="fab fa-gitlab"></i> `},
-            github:{link:"https://github.com/chescobarf",img:` <i class="fab fa-github"></i> `},
-            whatsapp:{link:"https://api.whatsapp.com/send?phone=56977031115",img:` <i class="fab fa-whatsapp"></i> `}
-        },
+        socials: [
+            {
+                nombre:"linkedin",
+                link:"https://www.linkedin.com/in/ch-escobarf/",
+                img:` <i class="fab fa-linkedin-in"></i> `
+            },
+            {
+                nombre:"gitlab",
+                link:"https://gitlab.com/ch.escobarf",
+                img:` <i class="fab fa-gitlab"></i> `
+            },
+            {
+                nombre:"github",
+                link:"https://github.com/chescobarf",
+                img:` <i class="fab fa-github"></i>  `
+            },
+            {
+                nombre:"whatsapp",
+                link:"https://api.whatsapp.com/send?phone=56977031115",
+                img:` <i class="fab fa-whatsapp"></i>`
+            }
+        ],
         experiencia: [
          {
              empresa:"Scotiabank Chile",
