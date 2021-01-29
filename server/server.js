@@ -63,14 +63,37 @@ app.get('/api-portfolio/', function (req, res) {
                 descripcion:"Titulado como Ingeniero en Informatica"
             }
         ],
-        habilidades:[
-            {nombre:"HTML",
-             icon:`<i class="fab fa-js-square"></i>`,
-            },
-            {nombre:"JS",
-             icon:`<i class="fab fa-js-square"></i>`,
-            }
-        ],
+        habilidades:{
+            versionamiento:
+            [
+                "git-alt",
+                "github",
+                "gitlab"
+            ],
+            front:[
+                "html5",
+                "css3-alt",
+                "js-square",
+                "sass",
+                "react",
+                "vuejs",
+            ],
+            back:[
+                "node",
+                "php"
+            ],
+            database:[
+                "MySQL",
+                "SQL SERVER"
+            ],
+            extras:[
+                "npm",
+                "hubspot",
+                "shopify",
+                "wordpress",
+                "trello"
+            ]
+        },
         proyectos:[
             {title:"Administrador de Pacientes",
              descripcion:`Creador de citas para clinica veterinaria, con almacenamiento de estas en Local Storage
